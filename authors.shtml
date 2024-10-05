@@ -1,0 +1,96 @@
+<HTML>
+  <HEAD>
+  <TITLE>PLP 5e Authors</TITLE>
+  </HEAD>
+  <BODY BGCOLOR="white">
+
+<table>
+<tr><td>
+<img align=left alt="PLP 5e cover" vspace=00 hspace=20
+  width=240 height=300 src="5e_cover_small.jpg"></ br>
+<H1>About the Authors</H1>
+<p>
+<a href="https://www.cs.rochester.edu/u/scott/"><big><b>Michael
+L. Scott</big></b></a>&nbsp;
+is the Arthur Gould Yates Professor of Engineering and Chair
+of the <a href="/">Department of Computer Science</a> at the
+<a href="http://www.rochester.edu">University of Rochester</a>.&nbsp;
+He received his Ph.D. in computer sciences in 1985 from the
+<a href="https://www.cs.wisc.edu">University of
+Wisconsin&#8211;Madison</a>.&nbsp;
+From 2014&ndash;2015 he was a Visiting Scientist at Google.&nbsp;
+His research interests lie at the
+intersection of programming languages, operating systems, and high-level
+computer architecture, with an emphasis on parallel and distributed
+computing.&nbsp;
+His MCS mutual exclusion lock,
+codesigned with <a href="https://cs.rice.edu/~johnmc/">John
+Mellor-Crummey</a>, is used in a variety of commercial
+and academic systems.&nbsp; Several other algorithms, co-designed with
+<a href="https://www.linkedin.com/in/maged-michael-bab1138a/">Maged Michael</a>,
+<a href="https://www.linkedin.com/in/bill-scherer-904798154/">Bill Scherer</a>,
+and <a href="https://gee.cs.oswego.edu/dl/">Doug Lea</a>,
+appear in the <code>java.util.concurrent</code>
+standard library.&nbsp;
+In 2006 he and Dr. Mellor-Crummey shared the ACM SIGACT/SIGOPS Edsger
+W. Dijkstra Prize in Distributed Computing.&nbsp;
+</p>
+<p>
+Dr. Scott is a Fellow of
+the <a href="http://acm.org">Association for Computing Machinery</a>,
+the <a href="http://ieee.org">Institute of Electrical and Electronics
+Engineers</a>,
+and the <a href="https://www.aaas.org/">American Association for the
+Advancement of Science</a>.&nbsp;
+He received the University of Rochester&rsauo;s Robert and Pamela Goergen
+Award for Distinguished Achievement and Artistry in Undergraduate
+Teaching in 2001 and its William H.&nbsp;Riker Award for Graduate Teaching in
+2020.&nbsp; In 2018 he received the Lifetime Achievement Award of the Hajim
+School of Engineering and Applied Sciences.&nbsp;
+</p>
+</td>
+<td>
+<img align=top alt="photo of Michael Scott" vspace=5
+  width=240 height=300 src="mls_small.jpg">
+</td></tr>
+<tr><td>
+<p>
+<a href="https://www.cs.cmu.edu/~aldrich/"><big><b>Jonathan
+Aldrich</big></b></a>&nbsp;
+is a Professor of Computer Science at Carnegie Mellon University.&nbsp;
+He received his Ph.D. in Computer Science and Engineering in 2003 from
+the University of Washington.&nbsp;
+His research centers on programming languages and type systems that are
+deeply informed by software engineering considerations.&nbsp;
+His research contributions include modular and gradual verification of
+functional properties, typestate, and architectural structure, as well
+as the design of languages and type systems for usability.&nbsp;
+In 2007 he received the Dahl-Nygaard Junior Prize, given for
+contributions to work on object orientation.&nbsp;
+</p>
+<p>
+Aldrich directed Carnegie Mellon&rsquo;s Ph.D. program in software
+engineering from 2013 to 2019.&nbsp;
+He has served as a program chair of programming language conferences
+such as OOPSLA and ECOOP, as well as general chair and steering
+committee chair of SPLASH.&nbsp;
+Outside the university, Aldrich is the CTO of
+<a href="https://www.noteful.net/welcome">Noteful</a>, a startup
+building an educational app for music theory and note reading.
+</p>
+</td>
+<td>
+<img align=top alt="photo of Jonathan Aldrich" vspace=5
+  width=240 height=300 src="ja_small.jpg">
+</td>
+</tr>
+</table>
+
+<P>
+<HR>
+<A HREF="home.shtml">
+<IMG ALIGN=MIDDLE SRC="up.gif" HSPACE=5 BORDER=NONE>
+  Back to the book home page</A>
+<HR>
+</BODY>
+</HTML>
