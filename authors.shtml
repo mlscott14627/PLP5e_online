@@ -1,8 +1,8 @@
-<HTML>
-  <HEAD>
-  <TITLE>PLP 5e Authors</TITLE>
-  </HEAD>
-  <BODY BGCOLOR="white">
+<html>
+<head>
+<title>PLP 5e Authors</title>
+</head>
+<body bgcolor="white">
 
 <table>
 <tr><td>
@@ -86,11 +86,11 @@ building an educational app for music theory and note reading.
 </tr>
 </table>
 
-<P>
-<HR>
-<A HREF="home.shtml">
-<IMG ALIGN=MIDDLE SRC="up.gif" HSPACE=5 BORDER=NONE>
+<p>
+<hr>
+<a href="home.shtml">
+<img align=middle src="up.gif" hspace=5 border=none>
   Back to the book home page</A>
-<HR>
-</BODY>
-</HTML>
+<hr>
+</body>
+</html>
