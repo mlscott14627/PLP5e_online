@@ -1,0 +1,444 @@
+<html>
+<head>
+<title>PLP 5e Preface</title>
+<style>
+.limited {
+  max-width:800px;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.pcode {
+  font-family: 'Arial', 'Helvetica';
+}
+</style>
+</head>
+<body bgcolor="white">
+
+<div class="limited">
+
+<img align=right alt="PLP 5e cover" hspace=8 vspace=8
+  src="images/5e_small.jpg">
+
+<H1><small><small>Preface to</small></small><br>
+Programming Language Pragmatics<br>
+<font color=green>
+<small><small>Fifth Edition</small></small></font></H1>
+
+<p>
+A course in computer programming} provides the typical
+student&rsquo;s first exposure to the field of computer science.&nbsp;  Most
+students in such a course will have used computers all their lives, for
+social networking, email, games, web browsing, word processing, and a
+host of other tasks, but it is not until they write their first programs
+that they begin to appreciate how applications <em>work</em>.&nbsp;  After
+gaining a certain level of facility as programmers (presumably with the
+help of a good course in data structures and algorithms), the natural
+next step is to wonder how <em>programming languages</em> work.&nbsp;  This book
+provides an explanation.&nbsp;  It aims, quite simply, to be the most
+comprehensive and accurate languages text available, in a style that is
+engaging and accessible to the typical undergraduate.&nbsp;  This aim reflects
+our conviction that students will understand more, and enjoy the material
+more, if we explain what is really going on.&nbsp;
+</p><p>
+In the conventional &ldquo;systems&rdquo; curriculum, the material beyond data
+structures (and possibly computer organization) tends to be
+compartmentalized into a host of separate subjects, including
+    programming languages,
+    compiler construction,
+    computer architecture,
+    operating systems,
+    networks,
+    parallel and distributed computing,
+    database management systems,
+and possibly
+    software engineering,
+    object-oriented design,
+    graphics,
+    or user interface systems.&nbsp;
+One problem with this compartmentalization is that the list of subjects
+keeps growing but the number of semesters in a Bachelor&rsquo;s program does
+not.&nbsp;  More important, perhaps, many of the most interesting discoveries
+in computer science occur at the boundaries <em>between</em> subjects.&nbsp;
+Computer architecture and compiler construction, for example, have
+inspired each other for 70 years, through generations of
+supercomputers, pipelined microprocessors, multicore chips, and modern
+GPUs.&nbsp;  Over the past two decades, advances in virtualization
+and container technology have served to blur the distinctions among
+hardware, operating systems, compilers, and language run-time systems,
+driving the explosive growth of cloud computing.&nbsp;
+Programming language technology is now routinely embedded in everything
+from dynamic web content, to gaming and entertainment, to security and
+finance.&nbsp;
+</p><p>
+Increasingly, both educators and practitioners have come to emphasize
+these sorts of interactions.&nbsp;  Within higher education
+in particular, there is a growing trend toward integration in the core
+curriculum.&nbsp;  Rather than give the typical student an in-depth look at
+two or three narrow subjects, leaving holes in all the others, many
+schools have revised the programming languages and computer organization
+courses to cover a wider range of topics, with follow-on electives in
+various specializations.&nbsp;  This trend is very much in keeping with the
+ACM/IEEE-CS <a href="https://www.acm.org/binaries/content/assets/education/cs2013_web_final.pdf"><em>Computer Science Curricula 2013</em></a>
+guidelines, which emphasize the need to
+manage the size of the curriculum
+and to cultivate both a &ldquo;system-level perspective&rdquo; and an appreciation
+of the interplay between theory and practice.&nbsp;
+In particular, the authors write
+<blockquote>
+    Graduates of a computer science program need to think at multiple
+    levels of detail and abstraction.&nbsp;  This understanding should
+    transcend the implementation details of the various components to
+    encompass an appreciation for the structure of computer systems and
+    the processes involved in their construction and analysis
+    [p.&nbsp;24].&nbsp;
+</blockquote>
+</p><p>
+On the specific subject of this text, they write
+<blockquote>
+    Programming languages are the medium through which programmers
+    precisely describe concepts, formulate algorithms, and reason about
+    solutions.&nbsp; In the course of a career, a computer scientist will work
+    with many different languages, separately or together.&nbsp; Software
+    developers must understand the programming models underlying
+    different languages and make informed design choices in languages
+    supporting multiple complementary approaches.&nbsp; Computer scientists
+    will often need to learn new languages and programming constructs,
+    and must understand the principles underlying how programming
+    language features are defined, composed, and implemented.&nbsp; The
+    effective use of programming languages, and appreciation of their
+    limitations, also requires a basic knowledge of programming language
+    translation and static program analysis, as well as run-time
+    components such as memory management [p.&nbsp;155].&nbsp;
+</blockquote>
+</p><p>
+The first four editions of <em>Programming Language Pragmatics</em>
+(PLP) had the good fortune of riding the trend toward integrated
+understanding.&nbsp;  This fifth edition continues and strengthens that
+tradition, with new material on both theoretical and practical aspects
+of programming language design and implementation.&nbsp;
+</p><p>
+At its core, PLP is a book about <em>how programming languages work</em>.&nbsp;
+Rather than enumerate the details of many different languages, it
+focuses on concepts that underlie all the languages the student is
+likely to encounter, illustrating those concepts with a variety of
+concrete examples, and exploring the tradeoffs that explain <em>why</em>
+different languages were designed in different ways.&nbsp;  Similarly, rather
+than explain how to build a compiler or interpreter (a task few
+programmers will undertake in its entirety), PLP focuses on what a
+compiler does to an input program, and why.&nbsp;  Language design and
+implementation are thus explored together, with an emphasis on the ways
+in which they interact.&nbsp;
+</p>
+
+<h2>Changes in the Fifth Edition</h2>
+<p>
+From our own perspective, the biggest change in the fifth edition is of
+course the addition of Jonathan Aldrich as co-author.&nbsp;  Prof. Aldrich
+brings extensive expertise in type systems, formal semantics, and software
+engineering, together with a fresh eye for material throughout the text.&nbsp;
+This has allowed us to undertake a major re-write of
+Chapters&nbsp;4 (Program Semantics)
+and&nbsp;7 (Type Systems), and to make
+substantial changes to Chapters&nbsp;8
+(Composite Types), 10 (Object Orientation),
+and&nbsp;15 (Building a Runnable Program) as well.&nbsp;
+Among other things, we have replaced semantic analysis and code
+generation techniques based on attribute grammars with techniques
+based on big-step formal inference rules.&nbsp;  (The attribute grammar
+material formerly in Chapter&nbsp;4 can now be
+found on the companion site.)&nbsp;
+We have also added coverage of
+formal subtyping (Sections 7.1.2 and 7.2.2),
+refinement and liquid types (Section 7.1.5),
+Hindley&ndash;Milner type inference (Section 7.4.1),
+template &ldquo;concepts&rdquo; in C++20
+(Section <small>C</small>-7.3.5),
+and ownership types (Section 8.5.5) and safe concurrency
+(Sections 13.4.1 and 13.5.1) in Rust.&nbsp;
+</p><p>
+In other chapters, we have introduced significant amounts of new or
+revised material on
+    iterators                   (Section 6.5.3),
+    move constructors and assignment
+                                (Section 9.3.1),
+    asynchronous programming    (Section 9.7),
+    mix-ins and traits          (Section 10.5),
+    TypeScript                  (Section 14.4.4),
+    WebAssembly                 (Section 15.2.3),
+    and the intermediate representations of the LLVM compiler
+    infrastructure              (Section <small>C</small>-15.2.1).&nbsp;
+To make room for these additions, we have moved coverage of web
+scripting (Section <small>C</small>-14.3) to the companion site, and have
+condensed material on a variety of less important topics.&nbsp;
+Hundreds or thousands of other small changes have been made throughout.&nbsp;
+We have addressed all known errata (though we probably added some more);
+increased the number of examples in
+newer languages (Swift, Go, Rust, Scala, JavaScript, TypeScript);
+eliminated some of the remaining examples in older languages
+(Pascal, Modula, Ada, Scheme, Perl);
+modified several code fragments to be more idiomatic;
+updated material in Chapters&nbsp;5, 15, and elsewhere to reflect advances in
+computer architecture;
+and added several languages
+to Appendix&nbsp;A and its genealogical chart.&nbsp;
+</p><p>
+Overall, the printed text has grown by roughly 30 pages.&nbsp;
+There are 7 more &ldquo;Design &amp; Implementation&rdquo; sidebars,
+54 more numbered examples,
+and about 60 new end-of-chapter exercises and explorations.&nbsp;
+Considerable effort has been invested in maintaining a consistent and
+comprehensive index.&nbsp;
+As in earlier editions, Morgan Kaufmann has maintained its commitment to
+providing definitive texts at reasonable cost: PLP-5e is far less expensive
+than competing alternatives, but larger and more comprehensive.&nbsp;
+</p>
+
+<h2>The Companion Site</h2>
+<p>
+To minimize the physical size of the text, make way for new material,
+and allow students to focus on the fundamentals when browsing,
+over 400 pages of more advanced or peripheral material can be found
+on a <a href="https://www.elsevier.com/books-and-journals/book-companion/9780323999663">companion
+web site</a>.&nbsp;
+Each companion-site (CS) section is represented in the main text by
+a brief introduction to the subject and an &ldquo;In More Depth&rdquo; paragraph that
+summarizes the elided material.&nbsp;
+</p><p>
+Note that placement of material on the companion site does <em>not</em> constitute a
+judgment about its technical importance.&nbsp;  It simply reflects the fact
+that there is more material worth covering than will fit in a single
+volume or a single-semester course.&nbsp;  Since preferences and syllabi vary,
+most instructors will probably want to assign reading from the CS, and
+most will refrain from assigning certain sections of the printed text.&nbsp;
+Our intent has been to retain in print the material that is likely to be
+covered in the largest number of courses.&nbsp;
+</p><p>
+Also included on the CS are
+    runnable copies of all significant code fragments found in the
+        text (in more than two dozen languages).&nbsp;
+</p>
+
+<h2>Design &amp; Implementation Sidebars</h2>
+<p>
+Like its predecessors, PLP-5e places heavy emphasis on the ways in which
+language design constrains implementation options, and the ways in which
+anticipated implementations have influenced language design.&nbsp;  Many of
+these connections and interactions are highlighted in some 145
+&ldquo;Design &amp; Implementation&rdquo; sidebars.&nbsp; A more
+detailed introduction appears in Sidebar 1.1.&nbsp; A numbered list
+appears in Appendix&nbsp;B.&nbsp;
+</p>
+
+<h2>Numbered and Titled Examples</h2>
+<p>
+Examples in PLP-5e are intimately woven into the flow of the
+presentation.&nbsp;  To make it easier to find specific examples, to remember
+their content, and to refer to them in other contexts, a number and a
+title for each is displayed in a marginal note.&nbsp;  There are well over 1000
+such examples across the main text and the CS.&nbsp;  A detailed list
+appears in Appendix&nbsp;C.&nbsp;
+</p>
+
+<h2>Exercise Plan</h2>
+<p>
+Review questions appear throughout the text at roughly 10-page
+intervals, at the ends of major sections.&nbsp;  These are based directly on
+the preceding material, and have short, straightforward answers.&nbsp;
+<p>
+More detailed questions appear at the end of each chapter.&nbsp;  These are
+divided into <em>Exercises</em> and <em>Explorations</em>.&nbsp;  The former are
+generally more challenging than the per-section review questions, and
+should be suitable for homework or brief projects.&nbsp;  The latter are more
+open ended, requiring web or library research, substantial time
+commitment, or the development of subjective opinion.&nbsp;
+Solutions to many of the exercises (but not the
+explorations) are available to registered instructors from a
+password-protected web site: visit
+<a href="https://www.elsevier.com/books-and-journals/book-companion/9780323999663"><em>www.elsevier.com/books-and-journals/book-companion/9780323999663</em></a>.&nbsp;
+</p>
+
+<h2>How to Use the Book</h2>
+<p>
+<em>Programming Language Pragmatics</em> covers almost all of the material
+in the PL &ldquo;knowledge units&rdquo; of the <em>Computer Science
+Curricula 2013</em> report.&nbsp;  The languages course at the University of
+Rochester, for which this book was originally designed, is in fact one of the
+featured &ldquo;course exemplars&rdquo; in the report
+(pp.&nbsp;369&ndash;371).&nbsp;
+Figure&nbsp;1 illustrates several possible paths through the text.&nbsp;
+</p>
+
+</div>
+
+<center>
+<img src="images/5e_chapter_plan.jpg" alt="Chart of paths through the
+text">
+<p></p>
+<p class="limited">
+<b>Figure 1&nbsp; Paths through the text.</b>&nbsp;
+    Darker shaded regions indicate supplemental &ldquo;In More
+    Depth&rdquo; sections on the companion site.&nbsp; Section numbers
+    are shown for breaks that do not correspond to supplemental
+    material.&nbsp;
+</p></center>
+
+<div class="limited">
+
+<p>
+For self-study, or for a full-year course (track <span class="pcode">F</span> in
+Figure&nbsp;1), we recommend working through
+the book from start to finish, turning to the companion site as each
+&ldquo;In More Depth&rdquo;
+section is encountered.&nbsp;
+The one-semester course at Rochester (track <span class="pcode">R</span>) also covers most
+of the book, but leaves out most of the CS sections, as well as
+bottom-up parsing (Section 2.3.4), logic languages
+(Chapter&nbsp;12), and the second halves of
+Chapters&nbsp;15 (Building a Runnable Program)
+and&nbsp;16 (Run-time Program Management).&nbsp;
+Note that the material on functional programming
+(Chapter&nbsp;11 in particular) can be taught in
+either OCaml or Scheme.&nbsp;
+</p><p>
+Some chapters (2, 4, 5, 15, 16, 17) have a heavier emphasis than others on
+implementation issues.&nbsp;  These can be reordered to a certain extent with
+respect to the more design-oriented chapters.&nbsp;  Many
+students will already be familiar with much of the material in
+Chapter&nbsp;5, most likely from a course on computer
+organization; hence the placement of the chapter on the companion site.&nbsp;
+Some students may also be familiar with some of the material in
+Chapter&nbsp;2, perhaps from a course on automata theory.&nbsp;
+Much of this chapter can then be read quickly as well, pausing perhaps
+to dwell on such practical issues as recovery from syntax errors, or the
+ways in which a scanner differs from a formal finite automaton.&nbsp;
+</p><p>
+A traditional programming languages course (track <span class="pcode">P</span> in
+Figure 1) might leave out all of scanning and
+parsing.&nbsp;  It would
+also de-emphasize the more implementation-oriented material throughout.&nbsp;
+In place of these, it could add such design-oriented CS sections as
+    multiple inheritance (Section 10.6),
+    Smalltalk (Section 10.7.1),
+    lambda calculus (Section 11.7),
+and
+    predicate calculus (Section 12.3).&nbsp;
+</p><p>
+PLP has also been used at some schools for an introductory compiler
+course (track <span class="pcode">C</span>
+in Figure 1).&nbsp;  The typical syllabus leaves out
+much of Part III (Chapters&nbsp;11
+through&nbsp;14), and de-emphasizes the more
+design-oriented material throughout.&nbsp;  In place of these, it
+includes all of scanning and parsing, Chapters&nbsp;15
+through&nbsp;17, and a slightly different mix of other CS sections.&nbsp;
+</p><p>
+For a school on the quarter system, an appealing option is to offer an
+introductory one-quarter course and two optional follow-on courses
+(track <span class="pcode">Q</span> in Figure 1).&nbsp;  The
+introductory quarter might cover the main (non-CS) sections of
+Chapters&nbsp;1, 3, 6, 7, and&nbsp;8, plus the first halves of
+Chapters&nbsp;2 and&nbsp;9.&nbsp;
+A language-oriented follow-on quarter might cover
+Chapter&nbsp;4, the rest of
+Chapter&nbsp;9, all of Part III,
+CS sections from Chapters&nbsp;6
+through&nbsp;9, and possibly supplemental material
+on formal semantics, type theory, or other related topics.&nbsp;
+A compiler-oriented follow-on quarter might cover the rest of
+Chapter&nbsp;2, Chapters&nbsp;5 and 15&ndash;17,
+CS sections from Chapters&nbsp;3, 9, and&nbsp;10, and possibly
+supplemental material on automatic code generation,
+aggressive code improvement, programming tools, and so on.&nbsp;
+</p><p>
+Whatever the path through the text, we assume that the typical reader has
+already acquired significant experience with at least one imperative
+language.&nbsp;  Exactly which language it is shouldn&rsquo;t matter.&nbsp;  Examples are
+drawn from a wide variety of languages, but always with enough comments
+and other discussion that readers without prior experience should be
+able to understand easily.&nbsp;
+Single-paragraph introductions to some 70 different languages
+appear in Appendix&nbsp;A.&nbsp;
+Algorithms, when needed, are presented in an
+informal pseudocode that should be self-explanatory.&nbsp;  Real
+programming language code is set in <code>"typewriter" font</code>.&nbsp;
+Pseudocode is set in a <span class="pcode">sans-serif font</span>.&nbsp;
+</p>
+
+<h2>Supplemental Materials</h2>
+<p>
+In addition to supplemental sections, the companion site contains
+complete source code for all nontrivial examples, and a list of all
+known errors in the book.&nbsp;
+Additional resources are available on-line at
+<a href="https://www.elsevier.com/books-and-journals/book-companion/9780323999663"><em>www.elsevier.com/books-and-journals/book-companion/9780323999663</em></a>.&nbsp;
+For instructors who have adopted the text, a password-protected page
+provides access&nbsp;to
+<ul>
+<li>
+    Editable PDF source for all the figures in the book
+<li>
+    Editable PowerPoint slides
+<li>
+    Solutions to most of the exercises
+<li>
+    Suggestions for larger projects
+</ul>
+</p>
+
+<h2>Acknowledgments for the Fifth Edition</h2>
+<p>
+In preparing the fifth edition, we have been blessed with the generous
+assistance of a very large number of people.&nbsp;  Many provided errata or
+other feedback on the fourth edition, among them
+    Carl Albing,
+    Wentao Cai,
+    Nicholas Coleman,
+    Chen Ding,
+    Samuel Estep,
+    Alexander Gutierrez,
+    Lucian Ilie,
+    Andrew Jarvis,
+    Tim Lee,
+    Shuo (Max) Li,
+    Sreepathi Pai,
+    Colin Pronovost,
+    Amila Senadheera,
+    Yannis Smaragdakis,
+    Ben Steele,
+    Yanling Wang,
+    Jingguo Yao,
+    Zhizhou Zhang,
+    and Zongren Zhang.&nbsp;
+We also remain indebted to the many individuals acknowledged in previous
+editions, and to the reviewers, adopters, and readers who made those
+editions a success.&nbsp;
+</p><p>
+In preparing the fifth edition, we have drawn on over 50 years of
+combined experience teaching programming language courses to upper-level
+undergraduates at the University of Rochester and at Carnegie Mellon University.&nbsp;
+We are grateful to all our students for their enthusiasm and
+feedback.&nbsp;  Our thanks extend also to our colleagues and graduate students, and
+to the administrative, secretarial, and technical staffs of our
+respective departments for providing such a supportive and productive
+work environment.&nbsp;
+</p><p>
+Last and perhaps most important of all, we are indebted to our spouses
+and children for their patience and support through endless months of
+writing and revising.&nbsp;  Computing is a fine profession, but family is
+what really matters.&nbsp;
+</p>
+<p align=right>
+Michael L. Scott&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Jonathan Aldrich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+August 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</p>
+
+<hr>
+<a href="home.shtml">
+<img align=middle src="images/up.gif" hspace=5 border=none>
+  Back to the book home page</A>
+<hr>
+</div>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<html>
+<head>
+<title>PLP 5e Table of Contents</title>
+</head>
+<body bgcolor="white">
+
+<img align=right alt="PLP 5e cover"
+  style="position: fixed; top: 10; left: 600"
+  src="images/5e_small.jpg">
+
+<h1>Programming Language Pragmatics<br>
+<font color=green>
+<small><small>Fifth Edition</small></small></font></h1>
+
+<h2>Contents</h2>
+
+<p>
+<img src="images/tablet_black.gif">&nbsp;&nbsp;
+    Located largely on the companion web site<br>
+<img src="images/star.gif">&nbsp;&nbsp;
+    New or heavily updated for the fifth edition<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    (smaller changes have been made throughout)<br>
+
+<p id="toc">
+</p>
+
+<script>
+function tocLine(tablet, star, sec, title) {
+    rtn = "<tr><td>";
+    if (tablet) {
+        rtn += "<img src=\"images/tablet_black.gif\">";
+    }
+    rtn += "<td>";
+    if (star) {
+        rtn += "<img src=\"images/star.gif\">";
+    }
+    rtn += "<td>";
+    level = (sec.match(/\./g) || []).length;
+    if (level == 0) {               // chapter
+        rtn += `<b>${sec}&nbsp;&nbsp;<td colspan=3><b>${title}</b>`;
+    } else if (level == 1) {        // section
+        rtn += `<td>${sec}&nbsp;&nbsp;<td colspan=2>${title}`;
+    } else if (level == 2) {        // subsection
+        rtn += `<td><td>${sec}&nbsp;&nbsp;<td>${title}`;
+    }
+    return rtn;
+}
+
+function insertTOC() {
+    _ = 0;
+    x = 1;
+
+    content =
+       "<table><col width=20><col width=26>"
+
+     + tocLine(_, x, "", "<a href=\"preface.shtml\">Preface</a>")
+
+     + "</table>"
+     + "<H3>&nbsp;&nbsp;Part I: Foundations</H3>"
+     + "<table><col width=20><col width=26>"
+
+     + tocLine(_, x, "1",     "Introduction")
+     + tocLine(_, _, "1.1",   "The Art of Language Design")
+     + tocLine(_, x, "1.2",   "The Programming Language Spectrum")
+     + tocLine(_, _, "1.3",   "Why Study Programming Languages?")
+     + tocLine(_, _, "1.4",   "Compilation and Interpretation")
+     + tocLine(_, _, "1.5",   "Programming Environments")
+     + tocLine(_, _, "1.6",   "An Overview of Compilation")
+     + tocLine(_, _, "1.6.1", "Lexical and Syntax Analysis")
+     + tocLine(_, _, "1.6.2", "Semantic Analysis and Intermediate Code Generation")
+     + tocLine(_, _, "1.6.3", "Target Code Generation")
+     + tocLine(_, _, "1.6.4", "Code Improvement")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "2",     "Programming Language Syntax")
+     + tocLine(_, _, "2.1",   "Specifying Syntax")
+     + tocLine(_, _, "2.1.1", "Tokens and Regular Expressions")
+     + tocLine(_, _, "2.1.2", "Context-Free Grammars")
+     + tocLine(_, _, "2.1.3", "Derivations and Parse Trees")
+     + tocLine(_, _, "2.2",   "Scanning")
+     + tocLine(_, x, "2.2.1", "Generating a Finite Automaton")
+     + tocLine(_, _, "2.2.2", "Scanner Code")
+     + tocLine(_, _, "2.2.3", "Table-Driven Scanning")
+     + tocLine(_, _, "2.2.4", "Lexical Errors")
+     + tocLine(_, _, "2.2.5", "Pragmas")
+     + tocLine(_, _, "2.3",   "Parsing")
+     + tocLine(_, _, "2.3.1", "Recursive Descent")
+     + tocLine(_, _, "2.3.2", "Writing an LL(1) Grammar")
+     + tocLine(_, _, "2.3.3", "Table-Driven Top-Down Parsing")
+     + tocLine(_, _, "2.3.4", "Bottom-Up Parsing")
+     + tocLine(x, _, "2.3.5", "Recovering from Syntax Errors")
+     + tocLine(x, _, "2.4", "  Theoretical Foundations")
+     + tocLine(x, _, "2.4.1", "Finite Automata")
+     + tocLine(x, _, "2.4.2", "Push-Down Automata")
+     + tocLine(x, _, "2.4.3", "Grammar and Language Classes")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "3",     "Names, Scopes, and Bindings")
+     + tocLine(_, _, "3.1",   "The Notion of Binding Time")
+     + tocLine(_, _, "3.2",   "Object Lifetime and Storage Management")
+     + tocLine(_, _, "3.2.1", "Static Allocation")
+     + tocLine(_, _, "3.2.2", "Stack-Based Allocation")
+     + tocLine(_, _, "3.2.3", "Heap-Based Allocation")
+     + tocLine(_, _, "3.2.4", "Garbage Collection")
+     + tocLine(_, _, "3.3",   "Scope Rules")
+     + tocLine(_, _, "3.3.1", "Static Scoping")
+     + tocLine(_, _, "3.3.2", "Nested Subroutines")
+     + tocLine(_, _, "3.3.3", "Declaration Order")
+     + tocLine(_, _, "3.3.4", "Modules")
+     + tocLine(_, _, "3.3.5", "Module Types and Classes")
+     + tocLine(_, _, "3.3.6", "Dynamic Scoping")
+     + tocLine(x, _, "3.4",   "Implementing Scope")
+     + tocLine(x, x, "3.4.1", "Symbol Tables")
+     + tocLine(x, _, "3.4.2", "Association Lists and Central Reference Tables")
+     + tocLine(_, _, "3.5",   "The Meaning of Names Within a Scope")
+     + tocLine(_, _, "3.5.1", "Aliases")
+     + tocLine(_, _, "3.5.2", "Overloading")
+     + tocLine(_, _, "3.6",   "The Binding of Referencing Environments")
+     + tocLine(_, _, "3.6.1", "Subroutine Closures")
+     + tocLine(_, _, "3.6.2", "First-Class Values and Unlimited Extent")
+     + tocLine(_, _, "3.6.3", "Object Closures")
+     + tocLine(_, _, "3.6.4", "Lambda Expressions")
+     + tocLine(_, _, "3.7",   "Macro Expansion")
+     + tocLine(x, _, "3.8",   "Separate Compilation")
+     + tocLine(x, _, "3.8.1", "Separate Compilation in C")
+     + tocLine(x, _, "3.8.2", "Packages and Automatic Header Inference")
+     + tocLine(x, _, "3.8.3", "Module Hierarchies")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, x, "4",     "Program Semantics")
+     + tocLine(_, x, "4.1",   "Abstract Syntax Trees")
+     + tocLine(_, x, "4.2",   "Constructing ASTs with Action Routines")
+     + tocLine(_, x, "4.3",   "Dynamic Semantics")
+     + tocLine(_, x, "4.3.1", "Dynamic Semantics for Variables and Statements")
+     + tocLine(_, x, "4.3.2", "Interpreting Dynamic Semantics")
+     + tocLine(_, x, "4.4",   "Static Semantics and Semantic Analysis")
+     + tocLine(_, x, "4.4.1", "Name Binding and Type Checking")
+     + tocLine(_, x, "4.4.2", "Implementing Type Checking")
+     + tocLine(_, x, "4.4.3", "Specifying Transformations")
+     + tocLine(_, x, "4.5",   "Semantic Properties of Languages: Soundness")
+     + tocLine(x, _, "4.6",   "Attribute Grammars")
+     + tocLine(x, _, "4.6.1", "Evaluating Attributes")
+     + tocLine(x, _, "4.6.2", "Action Routines and Attribute Grammars")
+     + tocLine(x, _, "4.6.3", "Semantic Analysis with Attribute Grammars")
+     + tocLine(x, _, "4.6.4", "Space Management for Attributes")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(x, _, "5",     "Target Machine Architecture")
+     + tocLine(x, x, "5.1",   "The Memory Hierarchy")
+     + tocLine(x, _, "5.2",   "Data Representation")
+     + tocLine(x, _, "5.2.1", "Integer Arithmetic")
+     + tocLine(x, _, "5.2.2", "Floating-Point Arithmetic")
+     + tocLine(x, x, "5.3",   "Instruction Set Architecture (ISA)")
+     + tocLine(x, _, "5.3.1", "Addressing Modes")
+     + tocLine(x, _, "5.3.2", "Conditions and Branches")
+     + tocLine(x, _, "5.4",   "Architecture and Implementation")
+     + tocLine(x, _, "5.4.1", "Microprogramming")
+     + tocLine(x, _, "5.4.2", "Microprocessors")
+     + tocLine(x, _, "5.4.3", "RISC")
+     + tocLine(x, x, "5.4.4", "Multithreading and Multicore")
+     + tocLine(x, _, "5.4.5", "Two Example Architectures: The x86 and ARM")
+     + tocLine(x, _, "5.5",   "Compiling for Modern Processors")
+     + tocLine(x, _, "5.5.1", "Keeping the Pipeline Full")
+     + tocLine(x, _, "5.5.2", "Register Allocation")
+
+     + "</table>"
+     + "<H3>&nbsp;&nbsp;Part II: Core Issues in Language Design</H3>"
+     + "<table><col width=20><col width=26>"
+
+     + tocLine(_, _, "6",     "Control Flow")
+     + tocLine(_, _, "6.1",   "Expression Evaluation")
+     + tocLine(_, _, "6.1.1", "Precedence and Associativity")
+     + tocLine(_, x, "6.1.2", "Assignments")
+     + tocLine(_, _, "6.1.3", "Initialization")
+     + tocLine(_, _, "6.1.4", "Ordering Within Expressions")
+     + tocLine(_, _, "6.1.5", "Short-Circuit Evaluation")
+     + tocLine(_, _, "6.2",   "Structured and Unstructured Flow")
+     + tocLine(_, _, "6.2.1", "Structured Alternatives to <code>goto</code>")
+     + tocLine(_, _, "6.2.2", "Continuations")
+     + tocLine(_, _, "6.3",   "Sequencing")
+     + tocLine(_, _, "6.4",   "Selection")
+     + tocLine(_, _, "6.4.1", "Short-Circuited Conditions")
+     + tocLine(_, _, "6.4.2", "<code>Case</code>/<code>Switch</code> Statements")
+     + tocLine(_, _, "6.5",   "Iteration")
+     + tocLine(_, x, "6.5.1", "Enumeration-Controlled Loops")
+     + tocLine(_, _, "6.5.2", "Combination Loops")
+     + tocLine(_, x, "6.5.3", "Iterators")
+     + tocLine(_, _, "6.5.4", "Logically Controlled Loops")
+     + tocLine(_, _, "6.6",   "Recursion")
+     + tocLine(_, x, "6.6.1", "Iteration and Recursion")
+     + tocLine(_, _, "6.6.2", "Applicative- and Normal-Order Evaluation")
+     + tocLine(x, _, "6.7",   "Nondeterminacy")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, x, "7",     "Type Systems")
+     + tocLine(_, x, "7.1",   "Overview")
+     + tocLine(_, x, "7.1.1", "The Meaning of &ldquo;Type&rdquo;")
+     + tocLine(_, x, "7.1.2", "Subtyping")
+     + tocLine(_, x, "7.1.3", "Polymorphism")
+     + tocLine(_, x, "7.1.4", "Orthogonality")
+     + tocLine(_, x, "7.1.5", "Classification of Types")
+     + tocLine(_, x, "7.2",   "Type Checking")
+     + tocLine(_, x, "7.2.1", "Type Equivalence")
+     + tocLine(_, x, "7.2.2", "Subtyping and Type Compatibility")
+     + tocLine(_, x, "7.2.3", "Local Type Inference")
+     + tocLine(_, x, "7.3",   "Generic Subroutines and Classes")
+     + tocLine(_, x, "7.3.1", "Checking Generic Types")
+     + tocLine(_, x, "7.3.2", "Implementation Options")
+     + tocLine(_, x, "7.3.3", "Generic Parameter Constraints")
+     + tocLine(_, x, "7.3.4", "Iimplicit Instantiation")
+     + tocLine(x, x, "7.3.5", "Generics in C++, Java, and C#")
+     + tocLine(_, x, "7.4",   "Implicit Parametric Polymorphism in ML")
+     + tocLine(_, x, "7.4.1", "Hindley-Milner Type Interence")
+     + tocLine(_, x, "7.4.2", "Bounded Polymorphism in Haskell")
+     + tocLine(_, x, "7.4.3", "Polymorphism through Dynamic Typing")
+     + tocLine(_, _, "7.5",   "Equality Testing and Assignment")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "8",     "Composite Types")
+     + tocLine(_, _, "8.1",   "Records (Structures)")
+     + tocLine(_, _, "8.1.1", "Syntax and Operations")
+     + tocLine(_, x, "8.1.2", "Record Semantics")
+     + tocLine(_, _, "8.1.3", "Memory Layout")
+     + tocLine(x, x, "8.1.4", "Unions (Variant Records, Datatypes)")
+     + tocLine(_, _, "8.2",   "Arrays")
+     + tocLine(_, _, "8.2.1", "Syntax and Operations")
+     + tocLine(_, _, "8.2.2", "Dimensions, Bounds, and Allocation")
+     + tocLine(_, _, "8.2.3", "Memory Layout")
+     + tocLine(_, _, "8.3",   "Strings")
+     + tocLine(_, _, "8.4",   "Sets")
+     + tocLine(_, _, "8.5",   "Pointers and Recursive Types")
+     + tocLine(_, x, "8.5.1", "Syntax and Operations")
+     + tocLine(_, x, "8.5.2", "Semantics of Pointers and Recursive Data Structures")
+     + tocLine(x, x, "8.5.3", "Dangling References")
+     + tocLine(_, x, "8.5.4", "Garbage Collection")
+     + tocLine(_, x, "8.5.5", "Memory Management in Rust")
+     + tocLine(_, x, "8.6",   "Lists")
+     + tocLine(x, _, "8.7",   "Files and Input/Output")
+     + tocLine(x, _, "8.7.1", "Interactive I/O")
+     + tocLine(x, _, "8.7.2", "File-Based I/O")
+     + tocLine(x, _, "8.7.3", "Text I/O")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "9",     "Subroutines and Control Abstraction")
+     + tocLine(_, _, "9.1",   "Review of Stack Layout")
+     + tocLine(_, _, "9.2",   "Calling Sequences")
+     + tocLine(x, _, "9.2.1", "Displays")
+     + tocLine(x, _, "9.2.2", "Case Studies: LLVM on ARM; <code>gcc</code> on x86")
+     + tocLine(x, _, "9.2.3", "Register Windows")
+     + tocLine(_, _, "9.2.4", "In-Line Expansion")
+     + tocLine(_, _, "9.3",   "Parameter Passing")
+     + tocLine(_, x, "9.3.1", "Parameter Modes")
+     + tocLine(x, _, "9.3.2", "Call by Name")
+     + tocLine(_, x, "9.3.3", "Special Purpose Parameters")
+     + tocLine(_, _, "9.3.4", "Function Returns")
+     + tocLine(_, x, "9.4",   "Exception Handling")
+     + tocLine(_, _, "9.4.1", "Defining Exceptions")
+     + tocLine(_, _, "9.4.2", "Exception Propagation")
+     + tocLine(_, _, "9.4.3", "Implementation of Exceptions")
+     + tocLine(_, _, "9.5",   "Coroutines")
+     + tocLine(_, _, "9.5.1", "Stack Allocation")
+     + tocLine(_, _, "9.5.2", "Transfer")
+     + tocLine(x, _, "9.5.3", "Implementation of Iterators")
+     + tocLine(x, _, "9.5.4", "Discrete Event Simulation")
+     + tocLine(_, x, "9.6",   "Events")
+     + tocLine(_, _, "9.6.1", "Sequential Handlers")
+     + tocLine(_, x, "9.6.2", "Thread-Based Handlers")
+     + tocLine(_, x, "9.7",   "Asynchronous Programming")
+     + tocLine(_, x, "9.7.1", "Callbacks, Promises, and <code>await</code> in JavaScript")
+     + tocLine(_, x, "9.7.2", "C# Tasks")
+
+     + "</table>"
+     + "<H3>&nbsp;&nbsp;Part III: Programming Models and Paradigms</H3>"
+     + "<table><col width=20><col width=26>"
+
+     + tocLine(_, x, "10",     "Object Orientation")
+     + tocLine(_, x, "10.1",   "Object-Oriented Programming")
+     + tocLine(_, x, "10.1.1", "Classes and Generics")
+     + tocLine(_, x, "10.2",   "Encapsulation and Inheritance")
+     + tocLine(_, _, "10.2.1", "Modules")
+     + tocLine(_, x, "10.2.2", "Classes")
+     + tocLine(_, x, "10.2.3", "Nesting (Inner Classes)")
+     + tocLine(_, _, "10.2.4", "Extending without Inheritance")
+     + tocLine(_, _, "10.3",   "Initialization and Finalization")
+     + tocLine(_, _, "10.3.1", "Choosing a Constructor")
+     + tocLine(_, _, "10.3.2", "References and Values")
+     + tocLine(_, _, "10.3.3", "Execution Order")
+     + tocLine(_, x, "10.3.4", "Garbage Collection")
+     + tocLine(_, x, "10.4",   "Dynamic Method Binding")
+     + tocLine(_, x, "10.4.1", "Virtual Methods and Abstract Classes")
+     + tocLine(_, x, "10.4.2", "Member Lookup")
+     + tocLine(_, _, "10.4.3", "Object Closures")
+     + tocLine(_, x, "10.5",   "Interface Inheritance: Traits and Mix-ins")
+     + tocLine(_, x, "10.5.1", "Implementation: In-line Caching")
+     + tocLine(_, x, "10.5.2", "Extensions")
+     + tocLine(x, _, "10.6",   "True Multiple Inheritance")
+     + tocLine(x, _, "10.6.1", "Semantic Ambiguities")
+     + tocLine(x, _, "10.6.2", "Replicated Inheritance")
+     + tocLine(x, _, "10.6.3", "Shared Inheritance")
+     + tocLine(_, _, "10.7",   "Object-Oriented Programming Revisited")
+     + tocLine(x, _, "10.7.1", "The Object Model of Smalltalk")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "11",     "Functional Languages")
+     + tocLine(_, _, "11.1",   "Historical Origins")
+     + tocLine(_, _, "11.2",   "Functional Programming Concepts")
+     + tocLine(_, _, "11.3",   "A Bit of Scheme")
+     + tocLine(_, _, "11.3.1", "Bindings")
+     + tocLine(_, _, "11.3.2", "Lists and Numbers")
+     + tocLine(_, _, "11.3.3", "Equality Testing and Searching")
+     + tocLine(_, _, "11.3.4", "Control Flow and Assignment")
+     + tocLine(_, _, "11.3.5", "Programs as Lists")
+     + tocLine(_, _, "11.3.6", "Extended Example: DFA Simulation in Scheme")
+     + tocLine(_, _, "11.4",   "A Bit of OCaml")
+     + tocLine(_, _, "11.4.1", "Equality and Ordering")
+     + tocLine(_, _, "11.4.2", "Bindings and Lambda Expressions")
+     + tocLine(_, _, "11.4.3", "Type Constructors")
+     + tocLine(_, _, "11.4.4", "Pattern Matching")
+     + tocLine(_, _, "11.4.5", "Control Flow and Side Effects")
+     + tocLine(_, _, "11.4.6", "Extended Example: DFA Simulation in OCaml")
+     + tocLine(_, _, "11.5",   "Evaluation Order Revisited")
+     + tocLine(_, _, "11.5.1", "Strictness and Lazy Evaluation")
+     + tocLine(_, _, "11.5.2", "I/O: Streams and Monads")
+     + tocLine(_, _, "11.6",   "Higher-Order Functions")
+     + tocLine(x, _, "11.7",   "Theoretical Foundations")
+     + tocLine(x, _, "11.7.1", "Lambda Calculus")
+     + tocLine(x, _, "11.7.2", "Control Flow")
+     + tocLine(x, _, "11.7.3", "Structures")
+     + tocLine(_, _, "11.8",   "Functional Programming in Perspective")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "12",     "Logic Languages")
+     + tocLine(_, _, "12.1",   "Logic Programming Concepts")
+     + tocLine(_, _, "12.2",   "Prolog")
+     + tocLine(_, _, "12.2.1", "Resolution and Unification")
+     + tocLine(_, _, "12.2.2", "Lists")
+     + tocLine(_, _, "12.2.3", "Arithmetic")
+     + tocLine(_, _, "12.2.4", "Search/Execution Order")
+     + tocLine(_, _, "12.2.5", "Extended Example: Tic-Tac-Toe")
+     + tocLine(_, _, "12.2.6", "Imperative Control Flow")
+     + tocLine(_, _, "12.2.7", "Database Manipulation")
+     + tocLine(x, _, "12.3",   "Theoretical Foundations")
+     + tocLine(x, _, "12.3.1", "Clausal Form")
+     + tocLine(x, _, "12.3.2", "Limitations")
+     + tocLine(x, _, "12.3.3", "Skolemization")
+     + tocLine(_, _, "12.4",   "Logic Programming in Perspective")
+     + tocLine(_, _, "12.4.1", "Parts of Logic Not Covered")
+     + tocLine(_, _, "12.4.2", "Execution Order")
+     + tocLine(_, _, "12.4.3", "Negation and the &ldquo;Closed World&rdquo; Assumption")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "13",     "Concurrency")
+     + tocLine(_, x, "13.1",   "Background and Motivation")
+     + tocLine(_, _, "13.2",   "Concurrent Programming Fundamentals")
+     + tocLine(_, _, "13.2.1", "Communication and Synchronization")
+     + tocLine(_, x, "13.2.2", "Languages and Libraries")
+     + tocLine(_, _, "13.2.3", "Thread Creation Syntax")
+     + tocLine(_, _, "13.2.4", "Implementation of Threads")
+     + tocLine(_, _, "13.3",   "Implementing Synchronization")
+     + tocLine(_, _, "13.3.1", "Busy-Wait Synchronization")
+     + tocLine(_, _, "13.3.2", "Nonblocking Algorithms")
+     + tocLine(_, _, "13.3.3", "Memory Consistency")
+     + tocLine(_, _, "13.3.4", "Scheduler Implementation")
+     + tocLine(_, x, "13.3.5", "Semaphores and Mutex Locks")
+     + tocLine(_, _, "13.4",   "Language-Level Constructs")
+     + tocLine(_, x, "13.4.1", "Scoped Locks")
+     + tocLine(_, _, "13.4.2", "Monitors")
+     + tocLine(_, _, "13.4.3", "Conditional Critical Regions")
+     + tocLine(_, _, "13.4.4", "Synchronization in Java")
+     + tocLine(_, x, "13.4.5", "Transactional Memory")
+     + tocLine(_, _, "13.4.6", "Implicit Synchronization")
+     + tocLine(x, _, "13.5",   "Message Passing")
+     + tocLine(x, x, "13.5.1", "Naming Communication Partners")
+     + tocLine(x, _, "13.5.2", "Sending")
+     + tocLine(x, _, "13.5.3", "Receiving")
+     + tocLine(x, _, "13.5.4", "Remote Procedure Call")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "14",     "Scripting")
+     + tocLine(_, x, "14.1",   "What Is a Scripting Language?")
+     + tocLine(_, _, "14.1.1", "Common Characteristics")
+     + tocLine(_, _, "14.2",   "Problem Domains")
+     + tocLine(_, _, "14.2.1", "Shell (Command) Languages")
+     + tocLine(_, _, "14.2.2", "Text Processing and Report Generation")
+     + tocLine(_, _, "14.2.3", "Mathematics and Statistics")
+     + tocLine(_, x, "14.2.4", "&ldquo;Glue&rdquo; Languages and General Purpose Scripting")
+     + tocLine(_, _, "14.2.5", "Extension Languages")
+     + tocLine(x, _, "14.3",   "Scripting the World Wide Web")
+     + tocLine(x, _, "14.3.1", "CGI Scripts")
+     + tocLine(x, _, "14.3.2", "Embedded Server-Side Scripts")
+     + tocLine(x, _, "14.3.3", "Client-Side Scripts")
+     + tocLine(x, _, "14.3.4", "Java Applets and Other Embedded Elements")
+     + tocLine(x, _, "14.3.5", "XSLT")
+     + tocLine(_, _, "14.4",   "Innovative Features")
+     + tocLine(_, _, "14.4.1", "Names and Scopes")
+     + tocLine(_, _, "14.4.2", "String and Pattern Manipulation")
+     + tocLine(_, _, "14.4.3", "Data Types")
+     + tocLine(_, x, "14.4.4", "Object Orientation")
+
+     + "</table>"
+     + "<H3>&nbsp;&nbsp;Part IV: A Closer Look at Implementation</H3>"
+     + "<table><col width=20><col width=26>"
+
+     + tocLine(_, _, "15",     "Building a Runnable Program")
+     + tocLine(_, _, "15.1",   "Back-End Compiler Structure")
+     + tocLine(_, _, "15.1.1", "A Plausible Set of Phases")
+     + tocLine(_, _, "15.1.2", "Phases and Passes")
+     + tocLine(_, _, "15.2",   "Intermediate Forms")
+     + tocLine(x, x, "15.2.1", "GCC and LLVM")
+     + tocLine(_, _, "15.2.2", "Stack-Based Intermediate Forms")
+     + tocLine(_, x, "15.2.3", "WebAssembly")
+     + tocLine(_, _, "15.3",   "Code Generation")
+     + tocLine(_, x, "15.3.1", "An Inference Rule Example")
+     + tocLine(_, _, "15.3.2", "Register Allocation")
+     + tocLine(_, _, "15.4",   "Address Space Organization")
+     + tocLine(_, _, "15.5",   "Assembly")
+     + tocLine(_, _, "15.5.1", "Emitting Instructions")
+     + tocLine(_, _, "15.5.2", "Assigning Addresses to Names")
+     + tocLine(_, _, "15.6",   "Linking")
+     + tocLine(_, _, "15.6.1", "Relocation and Name Resolution")
+     + tocLine(_, _, "15.6.2", "Type Checking")
+     + tocLine(x, _, "15.7",   "Dynamic Linking")
+     + tocLine(x, _, "15.7.1", "Position-Independent Code")
+     + tocLine(x, _, "15.7.2", "Fully Dynamic (Lazy) Linking")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, _, "16",     "Run-time Program Management")
+     + tocLine(_, _, "16.1",   "Virtual Machines")
+     + tocLine(_, _, "16.1.1", "The Java Virtual Machine")
+     + tocLine(x, _, "16.1.2", "The Common Language Infrastructure")
+     + tocLine(_, _, "16.2",   "Late Binding of Machine Code")
+     + tocLine(_, _, "16.2.1", "Just-in-Time and Dynamic Compilation")
+     + tocLine(_, _, "16.2.2", "Binary Translation")
+     + tocLine(_, _, "16.2.3", "Binary Rewriting")
+     + tocLine(_, _, "16.2.4", "Mobile Code and Sandboxing")
+     + tocLine(_, _, "16.3",   "Inspection/Introspection")
+     + tocLine(_, _, "16.3.1", "Reflection")
+     + tocLine(_, _, "16.3.2", "Symbolic Debugging")
+     + tocLine(_, _, "16.3.3", "Performance Analysis")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(x, _, "17",     "Code Improvement")
+     + tocLine(x, _, "17.1",   "Phases of Code Improvement")
+     + tocLine(x, _, "17.2",   "Peephole Optimization")
+     + tocLine(x, _, "17.3",   "Redundancy Elimination in Basic Blocks")
+     + tocLine(x, _, "17.3.1", "A Running Example")
+     + tocLine(x, _, "17.3.2", "Value Numbering")
+     + tocLine(x, _, "17.4",   "Global Redundancy and Data Flow Analysis")
+     + tocLine(x, _, "17.4.1", "SSA Form and Global Value Numbering")
+     + tocLine(x, _, "17.4.2", "Global Common Subexpression Elimination")
+     + tocLine(x, _, "17.5",   "Loop Improvement I")
+     + tocLine(x, _, "17.5.1", "Loop Invariants")
+     + tocLine(x, _, "17.5.2", "Induction Variables")
+     + tocLine(x, _, "17.6",   "Instruction Scheduling")
+     + tocLine(x, _, "17.7",   "Loop Improvement II")
+     + tocLine(x, _, "17.7.1", "Loop Unrolling and Software Pipelining")
+     + tocLine(x, _, "17.7.2", "Loop Reordering")
+     + tocLine(x, _, "17.8",   "Register Allocation")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, x, "A",     "Programming Languages Mentioned")
+     + tocLine(_, _, "B",     "Language Design and Language Implementation")
+     + tocLine(_, _, "C",     "Numbered Examples")
+
+     + "<tr><td>&nbsp;"
+
+     + tocLine(_, x, "",      "Bibliography")
+     + tocLine(_, _, "",      "Index")
+
+     + "</table>";
+
+    document.getElementById("toc").innerHTML = content;
+}
+
+insertTOC();
+</script>
+
+<hr>
+<a href="home.shtml">
+<img align=middle src="images/up.gif" hspace=5 border=none>
+  Back to the book home page</A>
+<hr>
+</body>
+</html>

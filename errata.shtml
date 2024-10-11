@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>PLP 5e Errata</title>
+<!-- set up semantic function lists; hijack samp tag for pseudocode -->
+<style>
+ul ol {
+    list-style: none;
+}
+ul.sfn {
+    list-style: none;
+    margin-left: 30;
+    padding-left: 19;
+}
+ul.sfn li:before {
+    list-style-position: outside;
+    content: '\25BB';
+    margin:0 5px 0 -19px;
+}
+ul.sfn li {
+    font-family: Sans-Serif;
+    font-size: 88%;
+}
+samp {
+    font-family: Sans-Serif;
+    font-size: 88%;
+}
+</style>
+</head>
+<body bgcolor="white">
+
+<img align=right alt="PLP 5e cover"
+  style="position: fixed; top: 10; left: 700"
+  src="images/5e_small.jpg">
+
+<h1>PLP 5e Errata</h1>
+
+<p style="width: 680px">
+This page contains a list of all known errors in the text.&nbsp;
+To report additional bugs, send mail to
+<img src="images/scott_email.gif" alt="Michael Scott's email address"
+valign="bottom">
+or
+<img src="images/aldrich_email.gif" alt="Jonathan Aldrich's email address"
+valign="bottom">.&nbsp;
+
+<h2>Main book</h2>
+<ul>
+<li>
+(None known yet.)
+</ul>
+
+<h2>Companion site</h2>
+<ul>
+<li>
+(None known yet.)
+</ul>
+
+<!-- <P> Thanks to ____
+for their help in catching these mistakes.
+
+<p>
+<hr>
+<a href="home.shtml">
+<img align=middle src="up.gif" hspace=5 border=none>
+  Back to the book home page</A>
+<hr>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<html>
+  <head>
+  <title>Programming Language Pragmatics</title>
+  </head>
+  <body bgcolor="white">
+  
+  <hr>
+  <table width="100%">
+  <tr>
+  <td valign=top>
+  <h1>Programming Language Pragmatics<br>
+  <small><small>by Michael L. Scott and Jonathan Aldrich<br>
+  <font color=green>
+  Fifth Edition</small></small></font></h1>
+
+  <p>
+  <big>
+  <a href="https://www.elsevier.com/books-and-journals/morgan-kaufmann">Morgan
+  Kaufmann Publishers</a></big>
+  <p>
+  <big>
+  Resources are also still available for the
+  <a href="/u/scott/pragmatics/1e">First</a>,
+  <a href="/u/scott/pragmatics/2e">Second</a>,
+  <a href="/u/scott/pragmatics/3e">Third</a>,
+  and
+  <a href="/u/scott/pragmatics/4e">Fourth</a>,
+  editions.&nbsp;
+  </big>
+  <hr>
+
+  <h2>On-line resources</h2>
+  <ul>
+
+  <li> <a href="https://booksite.elsevier.com/9780124104099/">Companion site</a>
+
+  </ul>
+      <blockquote>
+      Maintained by Elsevier, this site contains more than 400 pages of
+      supplemental material, together with PDF and PPT versions of all
+      the book&rsquo;s figures, and complete source code for all
+      nontrivial examples.&nbsp;
+      </blockquote>
+  <ul>
+  <li> <a href="/u/scott/pragmatics/5e/preface.shtml">Preface</a>
+    <ul>
+    <li><a href="/u/scott/pragmatics/5e/preface.shtml#5e_changes">
+        Changes in the Fifth Edition</a>
+    <li><a href="/u/scott/pragmatics/5e/preface.shtml#how_to_use">
+        How to Use the Book</a>
+    <li><a href="/u/scott/pragmatics/5e/preface.shtml#supplements">
+        Supplemental Materials</a>
+    <li><a href="/u/scott/pragmatics/5e/preface.shtml#acks">
+        Acknowledgments for the Fifth Edition</a>
+    </ul>
+  <li> <a href="/u/scott/pragmatics/5e/toc.shtml">Table of Contents</a>
+  <li> <a href="/u/scott/pragmatics/5e/from_the_authors.shtml">
+        A message from the author</a>
+  <li> <a href="/u/scott/pragmatics/5e/author.shtml">
+        About the author</a>
+  <li> <a href="/u/scott/pragmatics/5e/errata.shtml">Errata</a>
+  
+  <p>
+  <li> Instructors&rsquo; Materials
+  <ul>
+<!--
+  <li><a href="http://textbooks.elsevier.com/web/manuals.aspx?isbn=9780124104099">Lecture slides</a> (hosted at Elsevier)
+-->
+  <li> <a href="/u/scott/pragmatics/5e/solutions.shtml"> Solutions to selected exercises</a>
+  <li> <a href="/u/scott/pragmatics/5e/projects.shtml"> Suggested programming projects</a>
+  </ul>
+  <blockquote>
+  To access the instructors&rsquo; materials, you will need to
+  have an instructor&rsquo;s account with Elsevier.&nbsp;
+  See either of the pages above for instructions.&nbsp;
+  </blockquote>
+
+  <h2>Reviews (various editions)</h2>
+  <ul>
+      <li>
+      <!-- <a href="reviews/Glassborow.html"> -->
+      <a href="https://accu.org/bookreviews/2000/glassborow_1096/">
+      by Francis Glassborow</a> of the
+      <a href="http://www.accu.org"> Association of C and C++ Users</a>.
+      <li>
+      <!--
+      <a href="http://www.bcs.org.uk/publicat/ebull/jan01/reviews.htm">
+      -->
+      <a href="/u/scott/pragmatics/reviews/Daly.html">
+      by Philip Daly</a> CEng, MBCS,
+      Senior Scientific Programmer and Director,
+      realtimelinux.org.
+      <li>
+      <a href="/u/scott/pragmatics/reviews/Larus.jpg">
+      by James Larus</a>, EPFL (formerly at Microsoft Research).
+      <li>
+      <!--
+      <a href="http://www.bcs.org/content/conWebDoc/38884">
+      -->
+      <a href="/u/scott/pragmatics/reviews/Crick.jpg">
+      by Tom Crick</a>, MBCS, The Chartered Institute for IT.
+      <li>at Amazon.com:
+        <ul>
+        <li><a href="http://www.amazon.com/Programming-Language-Pragmatics-Third-Edition/product-reviews/0123745144/ref=dp_top_cm_cr_acr_txt?ie=UTF8&showViewpoints=1">third
+  edition</a>
+        <li><a href="https://www.amazon.com/Programming-Language-Pragmatics-Fourth-Michael/dp/0124104096/ref=cm_cr_arp_d_product_sims?ie=UTF8#customerReviews">fourth
+  edition</a>
+        </ul>
+      <li>Blogs:
+      <ul>
+          <li><a href="http://etymon.blogspot.com/2004/06/programming-language-pragmatics.html">Andrae Muys</a>
+          <li><a
+  href="http://www.dumpanalysis.org/Review+of+Programming+Language+Pragmatics">Dmitry Vostokov</a>
+<!--          <li>&ldquo;<a
+  href="http://slate-floor-tiles.blogspot.com/2009/12/review-of-programming-language.html">Floor Tiles</a>&rdquo; -->
+      </ul>
+      <li>Forewords:
+      <ul>
+      <li>to the <a href="/u/scott/pragmatics/2e/foreword.shtml">Second
+  Edition</a>, by James Larus, then at Microsoft Research
+      <li>to the <a href="/u/scott/pragmatics/3e/foreword.shtml">Third Edition</a>, by Barbara Ryder, Virginia Tech
+      <li>to the <a href="/u/scott/pragmatics/4e/foreword.shtml">Fourth Edition</a>, by David Padua, UIUC
+      </ul>
+  </ul>
+  
+  <h2><a href="/u/scott/pragmatics/adopters.shtml"> Schools that have
+  adopted the book</a><br><small>with links to course home pages where
+  known</small></h2>
+
+  <h2> <a name="how_to_order"> How to order</h2>
+  <ul>
+  <li> Direct from
+  <a href="https://shop.elsevier.com/books/programming-language-pragmatics/scott/978-0-12-410409-9">
+  Elsevier</a>
+  <li>
+  <a href="http://www.amazon.com/Programming-Language-Pragmatics-Fourth-Michael/dp/0124104096/ref=sr_1_1?ie=UTF8&qid=1449610527&sr=8-1&keywords=programming+language+pragmatics">Amazon.com</a>
+  <li>
+  <a href="http://www.barnesandnoble.com/w/programming-language-pragmatics-michael-lee-scott/1120285516?ean=9780124104099">
+  Barnes and Noble</a>
+  </ul>
+
+  <td width=325 valign=top align=center>
+  <a href="/u/scott/pragmatics/images/4e_medium.jpg">
+  <img hspace=3 alt="PLP 4e cover"
+      src="/u/scott/pragmatics/images/4e_small.jpg"></a>
+  <p>&nbsp;
+
+  <p>&nbsp;
+  <a href="/u/scott/pragmatics/images/3e_medium.jpg">
+  <img hspace=3
+      alt="PLP 3e cover" width=138 height=180
+      style="border:1px solid gray"
+      src="/u/scott/pragmatics/images/3e_small.jpg"></a>
+  <a href="/u/scott/pragmatics/images/2e_medium.jpg">
+  <img hspace=3
+      alt="PLP 2e cover" width=138 height=182
+      src="/u/scott/pragmatics/images/2e_small.jpg"></a><br>
+
+  <p>&nbsp;
+  <a href="/u/scott/pragmatics/images/med_cover.GIF">
+  <img hspace=3
+      alt="PLP 1e cover" width=138 height=182
+      src="/u/scott/pragmatics/images/small_cover.GIF"></a>
+  <a href="/u/scott/pragmatics/2e/PLP_China.html">
+  <img hspace=3
+      alt="PLP 2e Chinese edition" width=138 height=182
+      src="/u/scott/pragmatics/images/PLP2e_China_small.jpg"></a>
+
+  <p>&nbsp;
+  <a href="/u/scott/pragmatics/1e/PLP_China.html">
+  <img hspace=3
+      alt="PLP 1e Chinese edition" width=138 height=182
+      src="/u/scott/pragmatics/images/PLP_China_small.gif"></a>
+  <a href="/u/scott/pragmatics/images/PLP2e_Greece.jpg">
+  <img hspace=3 alt="PLP 2e Greek edition" width=138 height=182
+      src="/u/scott/pragmatics/images/PLP2e_Greece_small.jpg"></a>
+
+  <p>&nbsp;
+  <a href="/u/scott/pragmatics/images/PLP3e_China.jpg">
+  <img hspace=3 style="border:1px solid gray"
+      alt="PLP 3e Chinese edition" width=138 height=182
+      src="/u/scott/pragmatics/images/PLP3e_China_small.jpg"></a>
+  <a href="/u/scott/pragmatics/images/PLP2e_Korea.jpg">
+  <img hspace=3 ALT="PLP 2e Korean edition" width=138 height=182
+      src="/u/scott/pragmatics/images/PLP2e_Korea_small.jpg"></a>
+
+  </tr>
+  </table>
+  <p>
+  <hr>
+  </body>
+  <address>Last Change:
+            <!--#config timefmt="%d %B %Y"-->
+            <!--#flastmod file="./home.shtml"--> /
+  <img src="/u/scott/images/scott_email_italic_white.gif" align=top border=none
+  alt="Michael Scott's email address"><br>
+  </address>
+</html>

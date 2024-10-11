@@ -1,13 +1,21 @@
 <html>
 <head>
 <title>PLP 5e Authors</title>
+<style>
+body {
+  max-width:1000px;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+</style>
 </head>
 <body bgcolor="white">
 
 <table>
 <tr><td>
 <img align=left alt="PLP 5e cover" vspace=00 hspace=20
-  width=240 height=300 src="5e_cover_small.jpg"></ br>
+  width=240 height=300 src="images/5e_small.jpg"></ br>
 <H1>About the Authors</H1>
 <p>
 <a href="https://www.cs.rochester.edu/u/scott/"><big><b>Michael
@@ -50,8 +58,8 @@ School of Engineering and Applied Sciences.&nbsp;
 </p>
 </td>
 <td>
-<img align=top alt="photo of Michael Scott" vspace=5
-  width=240 height=300 src="mls_small.jpg">
+<img align=top alt="photo of Michael Scott" vspace=5 hspace=8
+  width=240 height=300 src="images/scott_small.jpg">
 </td></tr>
 <tr><td>
 <p>
@@ -80,8 +88,8 @@ building an educational app for music theory and note reading.
 </p>
 </td>
 <td>
-<img align=top alt="photo of Jonathan Aldrich" vspace=5
-  width=240 height=300 src="ja_small.jpg">
+<img align=top alt="photo of Jonathan Aldrich" vspace=5 hspace=8
+  width=240 height=300 src="images/aldrich_small.jpg">
 </td>
 </tr>
 </table>
@@ -89,7 +97,7 @@ building an educational app for music theory and note reading.
 <p>
 <hr>
 <a href="home.shtml">
-<img align=middle src="up.gif" hspace=5 border=none>
+<img align=middle src="images/up.gif" hspace=5 border=none>
   Back to the book home page</A>
 <hr>
 </body>
