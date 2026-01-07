@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>PLP 5e Errata</title>
 <!-- set up semantic function lists; hijack samp tag for pseudocode -->
 <style>
@@ -89,11 +90,14 @@ and
 &ldquo;<samp>op(/)</samp>&rdquo;,
 respectively.
 <li>
-Page 195: the conclusion of rule <i>ev-trunc</i> should be <i>E</i> &vdash; <samp>trunc(<i>e</i>)</samp> &DoubleDownArrow; <i>n</i>
+Page 195: the conclusion of rule <i>ev-trunc</i> should be <i>E</i>
+<samp>&vdash; trunc(<i>e</i>)</samp> &DoubleDownArrow; <i>n</i>
+<!-- in Firefox, vdash doesn't seem to render correctly in the default font -->
 <li>
 Page 196, Figure 4.9:
-the conclusion of rule <i>ev-lit</i> should be <i>E</i> &vdash; <i>v</i> &DoubleDownArrow; <i>v</i>.
-The conclusion of rule <i>ev-trunc</i> should be <i>E</i> &vdash; <samp>trunc(<i>e</i>)</samp> &DoubleDownArrow; <i>n</i>
+the conclusion of rule <i>ev-lit</i> should be <i>E</i>
+<samp>&vdash;</samp> <i>v</i> &DoubleDownArrow; <i>v</i>.
+The conclusion of rule <i>ev-trunc</i> should be <i>E</i> <samp>&vdash; trunc(<i>e</i>)</samp> &DoubleDownArrow; <i>n</i>
 <li>
 Page 205, last two lines: replace &ldquo;Python, Ruby, or
 JavaScript&rdquo; with &ldquo;Python or Ruby&rdquo;.&nbsp;
